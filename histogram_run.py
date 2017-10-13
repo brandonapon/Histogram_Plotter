@@ -18,3 +18,4 @@ else:
 	hist.title_name = plot_name
 
 	hist.import_file(filename)
+	hist.output_all_histograms()

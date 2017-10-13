@@ -20,7 +20,7 @@ class histogram:
 		while index_full < (self.num_bins*self.num_histograms*3):
 				self.input_bins.append(int(self.read_in[index_full]))
 				index_full+=3
-		print ("Self.input_bins =", self.input_bins)
+		#print ("Self.input_bins =", self.input_bins)
 
 	def make_histogram(self, num_output, current_bin_list):
 		#outputs histogram with name[num_output] as title
@@ -31,8 +31,12 @@ class histogram:
 		i = 0
 		j = 0
 		while i < self.num_histograms:
+			j = 0
 			while j < self.num_bins:
-				current_bin_list.append(self.input_bins[i+j])
+				current_bin_list.append(self.input_bins[self.num_histograms*j+i])
 				j+=1
+			print("Current_bin_list = ", current_bin_list)
 			i+=1
+			del current_bin_list[:]
+			#clear List
 

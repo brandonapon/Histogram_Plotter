@@ -1,10 +1,10 @@
-Bin 0: 1016
-Bin 1: 15
-Bin 2: 0
-Bin 3: 0
-Bin 4: 0
-Bin 5: 0
-Bin 6: 0
-Bin 7: 45
-Bin 8: 392
-Bin 9: 32
+Bin 0: 1016	Bin 0: 1016	Bin 0: 723	Bin 0: 656	Bin 0: 659	Bin 0: 295	Bin 0: 96
+Bin 1: 15	Bin 1: 15	Bin 1: 120	Bin 1: 842	Bin 1: 91	Bin 1: 268	Bin 1: 279
+Bin 2: 0	Bin 2: 0	Bin 2: 1	Bin 2: 0	Bin 2: 0	Bin 2: 0	Bin 2: 0
+Bin 3: 0	Bin 3: 0	Bin 3: 0	Bin 3: 0	Bin 3: 0	Bin 3: 0	Bin 3: 0
+Bin 4: 0	Bin 4: 0	Bin 4: 0	Bin 4: 0	Bin 4: 0	Bin 4: 0	Bin 4: 0
+Bin 5: 0	Bin 5: 0	Bin 5: 0	Bin 5: 0	Bin 5: 0	Bin 5: 0	Bin 5: 0
+Bin 6: 0	Bin 6: 0	Bin 6: 0	Bin 6: 0	Bin 6: 0	Bin 6: 0	Bin 6: 0
+Bin 7: 45	Bin 7: 0	Bin 7: 2	Bin 7: 0	Bin 7: 163	Bin 7: 158	Bin 7: 141
+Bin 8: 392	Bin 8: 358	Bin 8: 248	Bin 8: 0	Bin 8: 582	Bin 8: 588	Bin 8: 895
+Bin 9: 32	Bin 9: 111	Bin 9: 406	Bin 9: 2	Bin 9: 5	Bin 9: 191	Bin 9: 89
