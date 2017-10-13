@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as numpy
 import sys
 import math
+import pandas as pd
+
 
 class histogram:
 	def __init__(self):
@@ -25,22 +27,33 @@ class histogram:
 	def make_histogram(self, num_output, current_bin_list):
 		#outputs histogram with name[num_output] as title
 		bin_list = []
+		labels = []
+		X_axis = []
+		name = self.title_name + '[' + str(num_output) + ']'
 		for i in range(0,self.num_bins):
 			bin_list.append(i)
+			labels.append(current_bin_list[i])
+			X_axis.append(i)
+
+
+		freq_series = pd.Series.from_array(current_bin_list)
 
 		fig = plt.figure(1)
-		print ("self.num_bins =", self.num_bins)
-		plt.bar(bin_list, current_bin_list, color = "blue")
 
-		plt.xlabel('Bins')
-		plt.ylabel('Number of Samples')
-		plt.title(r'$\mathrm{Histogram\ of\ IQ:}\ \mu=100,\ \sigma=15$') #fix this
-		plt.axis([-1, 10, 0, 1500])
-		plt.xticks(range(10))
-		plt.tick_params(axis=u'both', which=u'both',length=0)
-		plt.grid(True)
-		name = self.title_name + '[' + str(num_output) + ']'
-		fig.savefig(name)
+		plt.figure(figsize=(12, 8))
+		ax = freq_series.plot(kind='bar')
+		ax.set_title(name)
+		ax.set_xlabel("Bin")
+		ax.set_ylabel("Frequency")
+		ax.set_xticklabels(X_axis)
+		
+
+		rects = ax.patches
+		for rect, label in zip(rects, labels):
+		    height = rect.get_height()
+		    ax.text(rect.get_x() + rect.get_width()/2, height + 5, label, ha='center', va='bottom')
+
+		plt.savefig(name)
 
 	def output_all_histograms(self):
 		current_bin_list = []
