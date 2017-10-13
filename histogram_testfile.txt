@@ -1,0 +1,10 @@
+Bin 0: 1016
+Bin 1: 15
+Bin 2: 0
+Bin 3: 0
+Bin 4: 0
+Bin 5: 0
+Bin 6: 0
+Bin 7: 45
+Bin 8: 392
+Bin 9: 32
